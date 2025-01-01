@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="nav-left">
+                <span class="nav-name">Jehan Usama</span>
+            </div>
+            <div class="nav-right">
+                <a href="#home" class="nav-link" data-target="home"><i class="fas fa-home"></i> Home</a>
+                <a href="#about" class="nav-link" data-target="about"><i class="fas fa-user"></i> About</a>
+                <a href="#projects" class="nav-link" data-target="projects"><i class="fas fa-briefcase"></i> Projects</a>
+                <a href="#skills" class="nav-link" data-target="skills"><i class="fas fa-cogs"></i> Skills</a>
+                <a href="#resume" class="nav-link" data-target="resume"><i class="fas fa-file-alt"></i> Resume</a>
+                <a href="#contact" class="nav-link" data-target="contact"><i class="fas fa-envelope"></i> Contact</a>
+            </div> 
+    </nav>
+
+    <section id="home" class="home-section section">
+        <div class="container">
+            <div class="logo">
+            <img src="Images/my_logo__1_-.png" alt="Logo" class="logo-img">
+            </div>
+                <div class="photo">
+                    <img src="Images/IMG_2.jpg" alt="Your Photo" class="photo-img">
+                </div>
+                <div class="intro">
+                    <p class="greeting">Hello!</p>
+                    <h1 class="name"> I'm Jehan </h1>
+                    <p class="role">Front-End Developer</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section" style="display: none;">
+        <div class="container_about">
+            <div class="photo-container">
+            <img src="Images/IMG_2.jpg" alt="Your Photo" class="about-photo">
+        </div>
+        <div class="intro-container">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-description">
+                Hello! I'm <strong>Jehan Usama</strong>, a passionate and dedicated Front-End Developer with a background in Electronics and Communications Engineering. 
+                My journey into web development began with a fascination for creating visually appealing and user-friendly interfaces. 
+                I specialize in HTML, CSS, JavaScript, and Angular, and I am currently expanding my expertise by learning TypeScript and GitHub.
+            </p>
+            <p class="about-description">
+                With a keen eye for detail and a strong commitment to delivering high-quality work, I have completed several projects that demonstrate my ability 
+                to transform ideas into responsive, dynamic, and functional websites. My skill set includes crafting pixel-perfect designs, optimizing performance, 
+                and collaborating effectively with teams to achieve project goals.
+            </p>
+            <p class="about-description">
+                Beyond coding, I enjoy solving problems and staying updated with the latest trends and technologies in the web development field. 
+                My goal is to contribute to impactful projects that improve user experiences and make a difference in the digital world.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section section" style="display: none;">
+        <div class="container">
+            <h2 class="projects-title">My Projects</h2>
+            <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="Images/portfolio-2.png" alt="Project 1" class="project-image">
+                <div class="project-info">
+                <h3 class="project-title">Personal Portfolio</h3>
+                <p class="project-description">
+                    A responsive portfolio website showcasing my skills and projects. Built using HTML, CSS, and JavaScript.
+                </p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+            </div>
+            <!-- Project 2 
+                <div class="project-card">
+                <img src="Images/weather-forecast-slide1.png" alt="Project 2" class="project-image">
+                <div class="project-info">
+                <h3 class="project-title">Project Two</h3>
+                <p class="project-description">
+                    A dynamic weather application fetching real-time data using APIs. Built with JavaScript and Angular.
+                </p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+            </div>
+            Project 3 
+            <div class="project-card">
+                <img src="Images/todo_list.png" alt="Project 3" class="project-image">
+                <div class="project-info">
+                <h3 class="project-title">Project Three</h3>
+                <p class="project-description">
+                    A task management tool to track daily activities. Developed with TypeScript and Angular.
+                </p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+            </div>
+            -->
+        </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section section" style="display: none;">
+        <div class="container">
+            <h2 class="skills-title">My Skills</h2>
+            <div class="skills-grid">
+            <!-- HTML5 -->
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon" style="color: #e34c26;"></i>
+                <p class="skill-name">HTML5</p>
+            </div>
+            <!-- CSS3 -->
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                <p class="skill-name">CSS3</p>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
+                <p class="skill-name">JavaScript</p>
+            </div>
+            <!-- Bootstrap -->
+            <div class="skill-card">
+                <i class="fab fa-bootstrap skill-icon" style="color: #563d7c;"></i>
+                <p class="skill-name">Bootstrap</p>
+            </div>
+            
+            <!-- Angular -->
+            <div class="skill-card">
+                <i class="fab fa-angular skill-icon" style="color: #dd1b16;"></i>
+                <p class="skill-name">Angular</p>
+            </div>
+            <!-- GitHub -->
+            <div class="skill-card">
+                <i class="fab fa-github skill-icon" style="color: #333;"></i>
+                <p class="skill-name">GitHub</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section section" style="display: none;">
+        <div class="container">
+            <h2 class="resume-title">My Resume</h2>
+            <div class="resume-buttons">
+            <!-- Button to Open PDF in a New Tab -->
+            <a href="files/Jehan Usama.pdf" class="resume-button" target="_blank">View Resume</a>
+            
+            <!-- Button to Download PDF -->
+            <a href="files/Jehan Usama.pdf" class="resume-button" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section" style="display: none;">
+        <div class="container">
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-description">Have a question or want to work together?</p>
+            <!-- Phone Section (Separate Row) -->
+            <div class="contact-phone">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt contact-icon color1"></i>
+                <span class="contact-text">+20 120 294 2911</span>
+            </div>
+            </div>
+            <!-- Other Contacts (Separate Row) -->
+            <div class="contact-info">
+            <!-- WhatsApp -->
+            <div class="contact-item">
+                <a href="https://wa.me/201202942911" class="contact-link" target="_blank">
+                <i class="fab fa-whatsapp contact-icon color2"></i>
+                </a>
+            </div>
+            <!-- Gmail -->
+            <div class="contact-item">
+                <a href="mailto:jehanusama3@gmail.com" class="contact-link">
+                <i class="fas fa-envelope contact-icon color3"></i>
+                </a>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/jehan-usama-20944a307/" class="contact-link" target="_blank">
+                <i class="fab fa-linkedin-in contact-icon color4"></i>
+                </a>
+            </div>
+            <!-- GitHub -->
+            <div class="contact-item">
+                <a href="https://github.com/jehanusama" class="contact-link" target="_blank">
+                <i class="fab fa-github contact-icon color5"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

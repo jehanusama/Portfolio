@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #202020;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color:  rgb(23, 22, 22);
+    color: #fff;
+}
+
+.nav-left .nav-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+.nav-right a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+.nav-right i {
+    margin-right: 8px; /* Space between the icon and the text */
+}
+
+.nav-right a:hover {
+    color: #00bcd4;
+}
+
+
+/* Home Section */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animation for fade-in effect */
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 1200px;
+  }
+
+  .logo-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Adds transition effect to images */
+  }
+  .photo-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Adds transition effect to images */
+  }
+  
+  .intro {
+    margin-top: 20px;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#a39875;
+    opacity: 0;
+    margin-top: 10px;
+    margin-bottom:10px;
+    animation: slideUp 2s ease-out forwards 1.6s; /* Slide-in animation for the name */
+}
+
+
+  
+  .greeting {
+    font-size: 2rem;
+    color: #D7CCC8;
+    opacity: 0;
+    animation: slideUp 2s ease-out forwards 0.8s; /* Slide-in animation for greeting */
+  }
+  
+  .role {
+    font-size: 2.8rem;
+    color: #bd8976;
+    opacity: 0;
+    animation: slideUp 2s ease-out forwards 2.4s; /* Slide-in animation for role */
+}
+
+  /* Hover effects for images */
+.logo-img:hover, .photo-img:hover {
+    transform: scale(1.1); /* Image zoom effect on hover */
+}
+
+  /* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #202020;
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation for the section */
+}
+
+.container_about {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-container {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.intro-container {
+  flex: 2 1 400px;
+  margin-left: 20px;
+  text-align: left;
+  animation: slideIn 1.5s ease-out; /* Slide-in animation for the text */
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #D7CCC8;
+  text-align: justify;
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #a39875;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* Projects Section */
+.projects-section {
+  padding: 50px 20px;
+  background-color: #202020;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #a39875;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff8f4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px rgba(113, 112, 112, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #a39875;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #c0b4af;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #a09c8f;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #6a675d;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 50px 20px;
+  background-color: #202020;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  color: #a39875;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 150px;
+  text-align: center;
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: var(--delay, 0s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Add delay to each card */
+.skill-card:nth-child(1) {
+  --delay: 0s;
+}
+.skill-card:nth-child(2) {
+  --delay: 0.2s;
+}
+.skill-card:nth-child(3) {
+  --delay: 0.4s;
+}
+.skill-card:nth-child(4) {
+  --delay: 0.6s;
+}
+.skill-card:nth-child(5) {
+  --delay: 0.8s;
+}
+.skill-card:nth-child(6) {
+  --delay: 1s;
+}
+
+
+/* Resume Section */
+.resume-section {
+  padding: 50px 20px;
+  background-color: #202020;
+  text-align: center;
+}
+
+.resume-title {
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  color: #a39875;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Resume Buttons Container */
+.resume-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Resume Button */
+.resume-button {
+  background-color: #8b6053; /* Bootstrap purple color */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resume-button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  background-color: #202020;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #a39875;
+  animation: fadeInUp 1s ease-in-out;
+}
+.contact-description{
+  font-size: 1.3rem;
+  margin-bottom: 80px;
+  color: #D7CCC8;
+  animation: fadeInUp 1s ease-in-out;
+}
+/* Phone Section */
+.contact-phone {
+  width: 30%;
+  margin: 50px auto;
+}
+
+.contact-phone .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-phone .contact-icon {
+  color: #8b6053;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-phone .contact-text {
+  font-size: 1.2rem;
+  color: #D7CCC8;
+  font-weight: 500;
+}
+
+/* Contact Info (Other Icons) */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-info .contact-item {
+  font-size: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info .contact-icon {
+  color: #8b6053;
+  font-size: 3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.contact-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item:hover .contact-icon {
+  /*color: #28a745;*/
+  transform: scale(1.2);
+}
+.contact-item:hover .color1,
+.contact-item:hover .color2{
+  color: #28a745;
+}
+.contact-item:hover .color3{
+  color: #EA4335;
+}
+.contact-item:hover .color4{
+  color: #0077B5;
+}
+.contact-item:hover .color5{
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
